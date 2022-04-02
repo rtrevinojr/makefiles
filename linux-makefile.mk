@@ -39,7 +39,7 @@ grep/o:
 	grep -o ${pattern} ${file-name-1}
 
 sed:
-	sed 's/source/destination/g' ${file-name-1}
+	sed 's/${regexpr}/${replacement}/${flags}' ${file-name-1}
 
 sed/json:
 	sed -E 's/("ts": ")(\d+)(",[\s\S]+?)("id": "HV_BATTERY_CELL_VOLTAGE_\d+",[\s\S]+?)("val": ")(\d+\.\d+)/test/g' input.json > out.json
