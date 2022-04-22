@@ -60,26 +60,25 @@ git/delete/branch/r:
 
 ## Git delete branch ##
 
-- Delete branch
-~~~
-$ git branch -d <branch-name>
-~~~
+# - Delete branch
+git/delete/branch:
+  git branch -d <branch-name>
 
-- Delete branch (FORCE)
-~~~
-$ git branch -D <branch-name>
-~~~
+# - Delete branch (FORCE)
+git/delete/branch/force:
+  git branch -D <branch-name>
 
-- Delete Remote branch
-~~~
-$ git branch origin --delete <branch-name>
-~~~
+
+# - Delete Remote branch
+git/delete/branch/r:
+  git branch origin --delete <branch-name>
+
 
 ## Git stash ##
 
 # - Stash Staged & Unstaged changes
 git/stash:
-  $ git stash
+  git stash
 
 
 # - Pop (most recently stashed changes) from working directory, and reapplies those changes to working directory
