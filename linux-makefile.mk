@@ -45,3 +45,16 @@ sed/json:
 	sed -E 's/("ts": ")(\d+)(",[\s\S]+?)("id": "HV_BATTERY_CELL_VOLTAGE_\d+",[\s\S]+?)("val": ")(\d+\.\d+)/test/g' input.json > out.json
 
 
+
+
+
+## Windows Grep (findstr) ##
+# The parameters have the following meanings:
+# s = recursive
+# p = skip non-printable characters
+# i = case insensitive
+# n = print line numbers
+# And the string to search for is the bit you put in quotes after /c:
+dos/findstr:
+	findstr /spin /c:"pattern" ${file-name}
+	
