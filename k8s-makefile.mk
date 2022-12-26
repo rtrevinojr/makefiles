@@ -30,4 +30,7 @@ wait:
 	kubectl -n ${namespace} wait pods --for=condition=Ready -l job-name=${job-name} --timeout=90s
 	kubectl -n ${namespace} wait pods --for=condition=Ready -l subgroup=ai3-server --timeout=90s
 	
-  
+logs/watch:
+	kubectl -n ${namespace} logs --watch ${pod-name}
+	
+
