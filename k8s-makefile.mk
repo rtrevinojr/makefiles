@@ -24,6 +24,7 @@ label/node/delete:
 top:
 	kubectl -n ${namespace} top pods
 	kubectl -n ${namespace} top nodes
+	kubectl top pods --all-namespaces
 	
 # create & wait
 wait:
