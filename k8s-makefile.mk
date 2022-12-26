@@ -20,6 +20,14 @@ label/node:
 label/node/delete:
 	kubectl label node ${node-name} -${key}
 	
-
+# top
+top:
+	kubectl -n ${namespace} top pods
+	kubectl -n ${namespace} top nodes
+	
+# create & wait
+wait:
+	kubectl -n ${namespace} wait pods --for=condition=Ready -l job-name=${job-name} --timeout=90s
+	kubectl -n ${namespace} wait pods --for=condition=Ready -l subgroup=ai3-server --timeout=90s
 	
   
