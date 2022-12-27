@@ -119,5 +119,7 @@ git/checkout/file:
 # $ git merge 
 
 
+# restore (remove from staging) 
+git restore --staged <file-name>
 
   
