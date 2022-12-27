@@ -34,4 +34,5 @@ wait:
 logs/watch:
 	kubectl -n ${namespace} logs --watch ${pod-name}
 	
-
+scale:
+	kubectl scale statefulsets <stateful-set-name> --replicas=<new-replicas>
