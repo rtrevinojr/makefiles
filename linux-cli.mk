@@ -16,4 +16,5 @@
 # 11 - \Ctrl + t     --> replace char left of cursor with right char
 # 12 - \Ctrl + y     --> paste clipboard
 # 13 - \Ctrl + b     --> move (backwards) one char
+# 14 - \Ctrl + v     --> version
 # 14 - \Ctrl + p     --> ?
