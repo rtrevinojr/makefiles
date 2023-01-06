@@ -10,8 +10,27 @@ hello:
 pull:
   git pull $remote
   # same as #
+  git fetch origin HEAD
+  git merge HEAD
+  # same as (with $remote being the current working directory) #
   git fetch $remote
   git merge orgin/$branch-name
+  
+# reset staging area to match most recent commit, but leave the working directory unchanged.
+reset:
+  git reset
+  
+# show unstaged changes between your index and working directory. #
+diff:
+  git diff
+  
+# show list of files staged, unstaged, and untracked.
+status:
+  git status
+  
+#implicity pulls down the remote branch with the same name as what is current local working directory branch
+pull/remote:
+  git pull $remote
  
 # similar as default invocation (i.e. git pull), fetches the remote conent but does not create a new merge commit. 
 pull/nocommit:
