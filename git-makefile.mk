@@ -167,4 +167,14 @@ restore:
 # unchanged: The file has not changed since its last commit. If you modify it, it becomes:
 # unstaged: Modified but not part of the next commit yet. You can stage it again with git add
 
+# git add will 'track' untracked files, and 'stage' any file
+
+# Untrack an uncommitted file #
+git rm --cached $filename
+
+# Unstage a staged file #
+git reset HEAD $filename
+
+
+
   
