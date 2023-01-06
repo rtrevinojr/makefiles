@@ -7,18 +7,37 @@ branch-name := <branch-name>
 hello:
   echo "Git Reference"
   
+pull:
+  git pull $remote
+  # same as #
+  git fetch $remote
+  git merge orgin/$branch-name
+ 
+# similar as default invocation (i.e. git pull), fetches the remote conent but does not create a new merge commit. 
+pull/nocommit:
+  git pull --no-commit $remote
+  
+# similar as default invocation, but instead of git merge to integreate the remote branch with the local, use git rebase
+pull/rebase:
+  git pull --rebase $remote
+  
+ 
+  
+pull/verbose:
+  git pull --verbose
+  
 # show branches local
-git/branch:
+branch:
     git branch
 # show branches remote
-git/branch:
+branch -r:
     git branch -r
 # show branches all
-git/branch:
+branch/a:
     git branch -a
     
 # delete local branch  
-git/delete/branch:
+branch/delete:
   git branch -d ${branch-name}
   
 # Force delete branch (branch with unmerged changes)
