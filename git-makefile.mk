@@ -156,6 +156,13 @@ git/checkout/file:
 # 3. merge file
 # $ git merge 
 
+add:
+  git add $filename
+  # add all #
+  git add .
+  # same as #
+  git add -A
+  
 
 # restore (remove from staging) 
 restore:
