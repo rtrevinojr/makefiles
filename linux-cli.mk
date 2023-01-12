@@ -22,12 +22,12 @@
 # - \Ctrl + e     --> END
 
 # - \Ctrl + b     --> go left (backwards) one character
-# - \Alt + e     --> go left (backwards) one word
+# - \Alt + b     --> go left (backwards) one word
 
 # - \Ctrl + f     --> go right (forwards) one character
 # - \Alt + f      --> go right (forwards) one word
 
-# - \Ctrl + b     --> move between the beginning of the line and the current position of the cursor
+# - \Ctrl + xx     --> move between the beginning of the line and the current position of the cursor
                   
 
 ## deleting ##
