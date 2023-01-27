@@ -9,6 +9,10 @@
 # - \Ctrl + z     --> suspend the current foreground process running in bash (SIGTSTP signal sent to process) use fg <pid> to return process to foreground later
 # - \Ctrl + d     --> close bash shell (sends EOF end-of-file marker to bash, & bash exits when it receives this marker) similar to running exit command
 
+# - $ bg          ---> continue running process in background after \Ctrl+z
+# - $ fg          ---> move background process to foreground after \Ctrl+z
+
+
 ## screen control ##
 
 # - \Ctrl + l     --> clear
