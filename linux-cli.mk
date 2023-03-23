@@ -69,4 +69,18 @@
 #  - \Alt + u      --> uncapitalize every character from cursor til end of current word
 #  - \Alt + c      --> capitalize character under cursor and move cursor to end of word
 
+## CLI aliases ##
+
+#  - !^      first argument
+#  - !$      last argument
+#  - !*      all arguments
+#  - !:2     second argument
+
+#  - !:2-3   second to third arguments
+#  - !:2-$   second to last arguments
+#  - !:2*    second to last arguments
+#  - !:2-    second to next to last arguments
+
+#  - !:0     the command
+#  - !!      repeat the previous line
 
