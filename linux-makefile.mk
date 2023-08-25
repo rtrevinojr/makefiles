@@ -42,7 +42,7 @@ sed:
 	sed 's/${regexpr}/${replacement}/${flags}' ${file-name-1}
 
 sed/json:
-	sed -E 's/("ts": ")(\d+)(",[\s\S]+?)("id": "HV_BATTERY_CELL_VOLTAGE_\d+",[\s\S]+?)("val": ")(\d+\.\d+)/test/g' input.json > out.json
+	sed -E 's/("ts": ")(\d+)(",[\s\S]+?)("id": "JSON_PROPERTY_VALUE_PREFIX_\d+",[\s\S]+?)("val": ")(\d+\.\d+)/test/g' input.json > out.json
 
 
 
