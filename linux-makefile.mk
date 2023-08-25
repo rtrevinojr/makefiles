@@ -27,8 +27,8 @@ grep/L:
 	grep -L ${pattern} ${file-name-1}
 
 # c = --count (count per file)
-grep/L:
-	grep -L ${pattern} ${file-name-1}
+grep/c:
+	grep -c ${pattern} ${file-name-1}
 
 # r = --recursive
 grep/r:
